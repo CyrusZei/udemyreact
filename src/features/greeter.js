@@ -7,7 +7,7 @@ var Greeter = React.createClass({
       message: 'Default message'
     }
   },
-  
+
 
 
   render: function(){
@@ -20,6 +20,7 @@ var Greeter = React.createClass({
 
     <form>
       <input type='text' ref='name'/>
+      <button>Set name</button>
     </form>
       </div>
     );
