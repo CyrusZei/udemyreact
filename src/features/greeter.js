@@ -7,6 +7,8 @@ var Greeter = React.createClass({
       message: 'Default message'
     }
   },
+  
+
 
   render: function(){
     var name    = this.props.name;
