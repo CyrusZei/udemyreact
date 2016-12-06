@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
 
 var Greeter = React.createClass({
-  render: function(){
+  getDefaultProps: function(){
+    return {
+      name: 'React',
+      message: 'Default message'
+    }
+  },
 
+  render: function(){
+    var name    = this.props.name;
+    var message = this.props.message;
     return(
       <div>
-      <h1>  Helloworld, from Greeter component</h1>
-
+      <h1>  Hello {name}, from Greeter component</h1>
+      <h3>{message}</h3>
       </div>
     );
   }

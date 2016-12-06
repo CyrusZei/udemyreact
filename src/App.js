@@ -7,7 +7,7 @@ var App = React.createClass({
   render:function(){
     return(
       <div>
-        <Greeter />
+        <Greeter name='Cyrus' message='Cool msg'/>
       </div>
     );
   }
