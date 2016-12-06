@@ -15,6 +15,10 @@ var Greeter = React.createClass({
       <div>
       <h1>  Hello {name}, from Greeter component</h1>
       <h3>{message}</h3>
+
+    <form>
+      <input type='text' ref='name'/>
+    </form>
       </div>
     );
   }
