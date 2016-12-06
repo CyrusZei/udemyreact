@@ -7,6 +7,9 @@ var Greeter = React.createClass({
       message: 'Default message'
     }
   },
+
+  
+
   onButtonClick:function(e){
     e.preventDefault();
 
