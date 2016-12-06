@@ -7,7 +7,12 @@ var Greeter = React.createClass({
       message: 'Default message'
     }
   },
+  onButtonClick:function(e){
+    e.preventDefault();
 
+    var name = this.refs.name.value;
+    alert(name);
+  },
 
 
   render: function(){
@@ -18,7 +23,7 @@ var Greeter = React.createClass({
       <h1>  Hello {name}, from Greeter component</h1>
       <h3>{message}</h3>
 
-    <form>
+    <form onSubmit={this.onButtonClick}>
       <input type='text' ref='name'/>
       <button>Set name</button>
     </form>
